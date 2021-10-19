@@ -1,0 +1,50 @@
+#a {
+  /* background-color: red; */
+  display: flex;
+}
+#b > div {
+  margin: 10px;
+  border-radius: 15px;
+  width: 120px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  height: 30px;
+
+  background-color: greenyellow;
+}
+#b > div:nth-child(1) {
+  background-image: linear-gradient(rgb(28, 159, 212), rgb(87, 88, 88));
+}
+#b > div:nth-child(2) {
+  background-image: linear-gradient(rgb(250, 160, 36), rgb(87, 88, 88));
+}
+#b > div:nth-child(3) {
+  background-image: linear-gradient(rgb(139, 188, 64), rgb(87, 88, 88));
+}
+#b > div:nth-child(4) {
+  background-image: linear-gradient(rgb(227, 72, 137), rgb(87, 88, 88));
+}
+#c > div {
+  margin: 10px;
+  border-radius: 15px;
+  width: 120px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  height: 30px;
+
+  background-color: greenyellow;
+}
+#c > div:nth-child(1) {
+  background-image: linear-gradient(rgb(137, 191, 207), rgb(87, 88, 88));
+}
+#c > div:nth-child(2) {
+  background-image: linear-gradient(rgb(191, 41, 55), rgb(87, 88, 88));
+}
+#c > div:nth-child(3) {
+  background-image: linear-gradient(rgb(98, 95, 160), rgb(87, 88, 88));
+}
+#c > div:nth-child(4) {
+  background-image: linear-gradient(rgb(160, 131, 50), rgb(87, 88, 88));
+}
