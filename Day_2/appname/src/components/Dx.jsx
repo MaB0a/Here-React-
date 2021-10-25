@@ -1,13 +1,14 @@
 import React from 'react'
+import './sty.css'
 
-
-function ListItem({title,id,status,handleDelete}) {
-
+function ListItem({ title, id, status, handleDelete }) {
   return (
-    <div>
-      <h1>{title}</h1>
-      <button onClick={()=>handleDelete(id)}>Delete</button>
+    <div id='az'>
+      <h1 id='title'>{title}</h1>
+      <button id='delete' onClick={() => handleDelete(id)}>
+        Delete
+      </button>
     </div>
   )
 }
-export default ListItem 
+export default ListItem

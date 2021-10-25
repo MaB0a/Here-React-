@@ -1,0 +1,54 @@
+.a{
+ width: 600px;
+ height:350px;
+ background-color: rgb(255, 165, 0);
+}
+.primary{
+ display:flex;
+ justify-content: space-between;
+ margin-top:20px
+}
+.primary>div{
+ margin: 20px;
+ margin-bottom: 10px;
+}
+.d{
+ height:40px;
+ font-weight: 500;
+ font-size: 20px;
+}
+.logos{
+ width:100px;
+ height:40px;
+}
+.block{
+ width: 130px;
+ height:40px;
+ background-color: black;
+ color: white;
+ text-align: center;
+ line-height:40px;
+ font-size: 20px;
+ font-weight: 500;
+ margin-left: 20px;
+ margin-bottom: 10px;
+}
+.c{
+ height:40px;
+ line-height:40px;
+ font-size: 35px;
+ font-weight: 700;
+ margin-left: 20px;
+}
+.c>div{
+ margin-top: 15px;
+
+}
+.e{
+ display: flex;
+ justify-content: space-between;
+ margin: 20px;
+ margin-top: 90px;
+ font-size: 15px;
+ font-weight: 500
+}

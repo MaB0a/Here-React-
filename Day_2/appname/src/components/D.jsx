@@ -1,6 +1,7 @@
 import React from 'react'
 import { v4 as uuid } from 'uuid'
 import ListItem from './Dx'
+ import "./sty.css"
 function List() {
   const [query, setQuery] = React.useState('')
   const [list, setList] = React.useState([])
@@ -20,21 +21,23 @@ setList(updatedL)
   }
   return (
     <>
-      <input
+      <div>
+        {list.map((it) => {
+          return <ListItem handleDelete={handleDelete} key={it.id} {...it} />
+        })}
+      </div>
+      <div id="az">
+
+      <input id="af"
         value={query}
         onChange={(e) => {
           setQuery(e.target.value)
         }}
         type='text'
         placeholder='add'
-      />
-      <button onClick={handleadd}>add</button>
-      <div>
-        {list.map((it) => {
-          return <ListItem handleDelete={handleDelete} key={it.id} {...it} />
-          
-        })}
-      </div>
+        />
+      <button id="delete" onClick={handleadd}>_add_ </button>
+        </div>
     </>
   )
 }
