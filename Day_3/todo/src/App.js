@@ -3,6 +3,7 @@ import './App.css'
 import { Todo } from './comp/Todo'
 import { useState, useEffect } from 'react'
 import { New } from './comp/NewTodo'
+import {Timer} from "./comp/Timer"
 function App() {
   const [data, setData] = useState([])
   const [dataa, setDataa] = useState(0)
@@ -45,6 +46,7 @@ function App() {
         ________________________________________________________________
       </div>
       <New />
+      <div className=""><Timer /></div>
     </div>
   )
 }

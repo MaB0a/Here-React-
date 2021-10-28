@@ -22,6 +22,7 @@ setList(updatedL)
   return (
     <>
       <div>
+        
         {list.map((it) => {
           return <ListItem handleDelete={handleDelete} key={it.id} {...it} />
         })}

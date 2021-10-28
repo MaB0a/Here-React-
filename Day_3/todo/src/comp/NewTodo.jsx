@@ -45,6 +45,7 @@ export const New = () => {
       setTodo(todo + 1)
     }, 400)
   }
+  
   const el = (id, status) => {
     let t = false
     status ? (t = false) : (t = true)
