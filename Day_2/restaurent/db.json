@@ -1,0 +1,28 @@
+{
+  "rest": [
+    {
+      "Id": 1,
+      "name": "URU Brewpark",
+      "food": "Continental, Pizza, Asian Desserts",
+      "Cost": 600,
+      "Min": "Rs. 50",
+      "Time": "Up to 30 min",
+      "star": 4.3,
+      "votes": 766,
+      "Reviews": 512,
+      "pay": "O"
+    },
+    {
+      "Id": 2,
+      "name": "The cinnamon restaurent",
+      "food": "Continental, Vada, Asian Desserts, Ice Creams",
+      "Cost": 500,
+      "Min": "Rs. 150",
+      "Time": "Up to 45 min",
+      "star": 3.5,
+      "votes": 766,
+      "Reviews": 512,
+      "pay": "CO"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+.Nav {
+  background-color: aqua;
+  width: 90%;
+  height: 100px;
+  border-radius: 10px;
+}
+.Nav > button {
+  margin: 10px;
+}
