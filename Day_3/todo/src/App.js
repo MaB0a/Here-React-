@@ -25,15 +25,15 @@ function App() {
   const fn = (fn) => {
     setData([...data, fn])
   }
-
+console.log(data);
   return (
     <div className='App'>
       <Todo fn={fn} />
-      <div className='a'>
+      {/* <div className='a'>
         {data.map((e) => (
           <h1 key={e.id}>{e.name}</h1>
         ))}
-      </div>
+      </div> */}
       <button
         onClick={() => {
           setDataa(dataa + 1)

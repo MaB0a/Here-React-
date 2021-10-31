@@ -23,6 +23,18 @@
       "votes": 766,
       "Reviews": 512,
       "pay": "CO"
+    },
+    {
+      "Id": 3,
+      "name": "The PRADA",
+      "food": "Continental, Vada, Asian Desserts, Ice Creams",
+      "Cost": 500,
+      "Min": "Rs. 150",
+      "Time": "Up to 45 min",
+      "star": 3.5,
+      "votes": 766,
+      "Reviews": 512,
+      "pay": "CO"
     }
   ]
 }

@@ -11,7 +11,7 @@ export const New = () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name: bull, status: false }),
     }
-    fetch('http://localhost:3001/todo', requestOptions).then((response) =>
+    fetch('http://localhost:3004/todo', requestOptions).then((response) =>
       response.json()
     )
     setTimeout(function () {
@@ -22,18 +22,19 @@ export const New = () => {
 
   useEffect(() => {
     getData()
-  }, [todo,count])
+  }, [todo, count])
 
   const getData = () => {
-    fetch(`http://localhost:3001/todo?_page=${count}&_limit=5`)
+    fetch(`http://localhost:3004/todo?_page=${count}&_limit=5`)
       .then((d) => d.json())
       .then((res) => {
         setData(res)
       })
   }
+  console.log(data);
 
   const del = (id) => {
-    fetch(`http://localhost:3001/todo/${id}`, {
+    fetch(`http://localhost:3004/todo/${id}`, {
       method: 'DELETE',
     })
       .then((res) => res.json())
@@ -45,11 +46,11 @@ export const New = () => {
       setTodo(todo + 1)
     }, 400)
   }
-  
+
   const el = (id, status) => {
     let t = false
     status ? (t = false) : (t = true)
-    fetch(`http://localhost:3001/todo/${id}`, {
+    fetch(`http://localhost:3004/todo/${id}`, {
       method: `PATCH`,
       body: JSON.stringify({
         status: t,
@@ -80,15 +81,16 @@ export const New = () => {
         </button>
       </div>
       <div className='a'>
-        {data.map((e) => (
-          <h1 key={e.id}>
-            {e.name}-
-            <button onClick={() => el(e.id, e.status)}>
-              {e.status ? 'Done!' : 'Not Done'}
-            </button>
-            - <button onClick={() => del(e.id)}>DEL</button>
-          </h1>
-        ))}
+        { data.map((e) => (
+              <h1 key={e.id}>
+                {e.name}-
+                <button onClick={() => el(e.id, e.status)}>
+                  {e.status ? 'Done!' : 'Not Done'}
+                </button>
+                - <button onClick={() => del(e.id)}>DEL</button>
+              </h1>
+            ))
+          }
       </div>
       <button onClick={() => setCount(count - 1)}> prev </button>
       <button onClick={() => setCount(count + 1)}> next </button>

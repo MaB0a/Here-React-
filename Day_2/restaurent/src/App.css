@@ -1,9 +1,20 @@
 .App {
+  background-color: grey;
   text-align: center;
   display: flex;
   align-items: center;
-  width:100vw;
-  margin-top:10px;
+  width: 100vw;
+  margin-top: 10px;
   flex-direction: column;
 }
-
+.BB {
+  display: flex;
+  flex-direction: column;
+}
+.BB > input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width:500px;
+  height:30px;
+  box-sizing: border-box;
+}

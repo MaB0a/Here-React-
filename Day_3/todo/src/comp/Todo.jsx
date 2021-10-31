@@ -15,7 +15,7 @@ export const Todo = ({fn}) => {
       .then((response) => response.json())
 
       .then((data) => {
-        setData(data)
+        setData(...data)
         fn(data)
       })
       .catch((error) => {
