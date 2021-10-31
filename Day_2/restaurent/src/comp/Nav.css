@@ -7,3 +7,20 @@
 .Nav > button {
   margin: 10px;
 }
+.block {
+  width: 500px;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.bbb{
+  display: flex;
+}
+.bbb>h3{
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
